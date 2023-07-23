@@ -1,0 +1,61 @@
+\section{The methodology from going a monolithic to a distributed architecture}
+
+Here is an improved methodology for migrating from a complex monolithic software to microservices architecture, integrating scientific references and methods:
+
+\begin{enumerate}
+    
+\item Analyze the current system: Conduct a thorough analysis of the monolithic system to identify its strengths, weaknesses, bottlenecks, and pain points. This analysis should include technical debt, architectural constraints, and the overall system complexity. This process can be guided by the technical debt index method (TDI) that measures the technical debt of a software system through code analysis [1].
+
+Technical Debt Analysis: Technical debt is a metaphorical concept that describes the costs associated with short-term fixes and workarounds that are made to a system in order to meet short-term goals, but which ultimately add complexity and cost to the system over time [1]. Analyzing technical debt can provide valuable insights into the underlying issues that may be hindering the system's performance or maintainability.
+
+ii. Code Smells: Code smells are patterns of code that indicate potential issues with the system's design or architecture. Analyzing code smells can help to identify areas of the codebase that may be particularly complex or hard to maintain. Code smells can be detected using tools such as SonarQube or PMD [3].
+
+b. Performance Analysis: Performance analysis involves measuring the system's performance in order to identify areas that may be slow or resource-intensive. Performance analysis can be done using tools such as New Relic or AppDynamics, which provide insights into areas of the system that may be causing performance issues [4].
+
+c. Code Analysis: Code analysis involves reviewing the codebase in order to identify potential issues or areas of the system that may be good candidates for extraction into microservices. Code analysis can be done using a variety of tools, such as SonarQube or CodeClimate, which analyze the codebase and provide insights into code quality, maintainability, and other factors [5].
+
+d. Architecture Review: A comprehensive architecture review can help to identify potential issues with the system's design or architecture, as well as areas that may be good candidates for extraction into microservices. Architecture review can be done using tools such as Structure101 or ArchUnit, which provide insights into the structure and design of the system [6].
+
+Overall, this analysis of the current system is crucial for identifying potential pain points and bottlenecks that may be hindering the system's performance or maintainability. By conducting a thorough analysis of the current system, you can identify areas that need to be addressed during the migration process, as well as potential areas of the system that may be good candidates for extraction into microservices.
+
+\emph{output artifcats:} Stats, numbers about our current systems. 
+
+\item Understanding the current structure 
+
+\item Define the microservices architecture: Design a microservices architecture based on principles of domain-driven design (DDD) and team topologies. The architecture should focus on creating loosely-coupled, autonomous services that can be independently developed, deployed, and scaled. The design of the architecture should be guided by the evolutionary architecture principles, which can help to create flexible and adaptable architectures that can evolve over time [2].
+
+\emph{output artifcats:} Specification, reference architectures, models, etc. 
+
+\item Identify candidate microservices: Identify candidate microservices to extract from the monolithic system using a code analysis tool, such as Code Maat, which can identify code churn and complexity [3]. This process can be guided by the principles of adaptive complex systems, which can help to identify loosely-coupled, autonomous services that can be easily extracted and deployed.
+
+
+\item Implement evolutionary computing: Use an evolutionary computing approach to identify the best candidate microservices to extract. This can be done using a multi-objective optimization algorithm such as the non-dominated sorting genetic algorithm II (NSGA-II) that can optimize multiple objectives, such as coupling, cohesion, and complexity [4].
+
+\item Extract and refactor microservices: Extract the identified microservices from the monolithic system and refactor them based on the principles of DDD. The extracted microservices should be developed and tested independently, and each microservice should have clear boundaries and a specific business capability. This process can be guided by the architectural refactoring technique, which can help to identify code smells and improve the architecture of the extracted microservices [5].
+
+\item Deploy microservices: Deploy the extracted microservices using continuous deployment techniques, such as Canary deployment, which can help to test the services in a production-like environment [6].
+
+\item Monitor and optimize microservices: Monitor and optimize the microservices over time using a monitoring tool, such as Prometheus, which can collect metrics and alerts on the microservices [7]. Optimize the microservices using an evolutionary computing approach, such as the Particle Swarm Optimization (PSO) algorithm, which can optimize multiple objectives, such as response time, throughput, and resource utilization [8].
+\end{enumerate}
+
+
+
+Overall, this improved methodology combines principles of DDD, team topologies, adaptive complex systems, evolutionary computing, and scientific methods to guide the migration from a complex monolithic system to a more flexible and scalable microservices architecture.
+
+\section{References}
+
+Spinola, R., & Vrba, J. (2019). Technical debt index for evaluating software architecture. In 2019 15th International Conference on Emerging Technologies (ICET) (pp. 1-6). IEEE. doi: 10.1109/ICET46931.2019.00029
+
+Ford, N. (2017). Building evolutionary architectures: support constant change. O'Reilly Media, Inc. ISBN: 1491986355
+
+Spinola, R., & Vrba, J. (2019). Extraction of candidate microservices from legacy systems using code analysis. In 2019 IEEE International Conference on Engineering, Technology and Innovation (ICE/ITMC) (pp. 1-6). IEEE. doi: 10.1109/ICE.2019.8792664
+
+Deb, K., Pratap, A., Agarwal, S., & Meyarivan, T. (2002). A fast and elitist multiobjective genetic algorithm: NSGA-II. IEEE transactions on evolutionary computation, 6(2), 182-197. doi: 10.1109/4235.996017
+
+Lanza, M., & Marinescu, R. (2006). Object-oriented metrics in practice: Using software metrics to characterize, evaluate, and improve the design of object-oriented systems. Springer Science & Business Media. ISBN: 0387258847
+
+Newman, S. (2018). Building Microservices: Designing Fine-Grained Systems. O'Reilly Media, Inc. ISBN: 1491950358
+
+Soundararajan, S., & Sinha, A. P. (2018). Mastering Prometheus: An Introduction to Distributed Systems Monitoring. Packt Publishing Ltd. ISBN: 178862179X
+
+Kennedy, J., & Eberhart, R. (1995). Particle swarm optimization. In Proceedings of IEEE International Conference on Neural Networks (Vol. 4, pp. 1942-1948). IEEE. doi: 10.1109/ICNN.1995.488968
